@@ -18,7 +18,7 @@ config dnsmasq
 config dhcp 'lan'
 	option interface 'lan'
 	option limit '150'
-	option leasetime '514m'
+	option leasetime '120m'
 	option start '50'
 
 config dhcp 'wan'
