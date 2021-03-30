@@ -24,7 +24,11 @@ rm -rf ./package/lean/luci-theme-argon
 rm -rf ./feeds/packages/net/https-dns-proxy
 rm -rf ./feeds/diy/luci-app-vssr-plus
 rm -rf ./feeds/diy/vssr
+rm -rf ./feeds/packages/devel/ninja
 # rm -rf ./package/lean/v2ray
 # rm -rf ./package/lean/v2ray-plugin
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
+svn co https://github.com/Lienol/openwrt-packages/trunk/devel/ninja feeds/packages/devel/ninja
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 # svn co https://github.com/project-openwrt/openwrt/trunk/package/lean/dnsforwarder package/lean/dnsforwarder
