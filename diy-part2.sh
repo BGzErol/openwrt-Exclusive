@@ -22,8 +22,8 @@ sed -i "s/hostname='OpenWrt'/hostname='OpenWrt-SE'/g" ./package/base-files/files
 # rm -rf ./package/lean/dnsforwarder
 rm -rf ./package/lean/luci-theme-argon
 rm -rf ./feeds/packages/net/https-dns-proxy
-rm -rf ./feeds/diy/luci-app-vssr-plus
-rm -rf ./feeds/diy/vssr
+# rm -rf ./feeds/diy/luci-app-vssr-plus
+# rm -rf ./feeds/diy/vssr
 rm -rf ./feeds/packages/devel/ninja
 # rm -rf ./package/lean/v2ray
 # rm -rf ./package/lean/v2ray-plugin
