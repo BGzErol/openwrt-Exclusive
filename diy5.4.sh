@@ -32,3 +32,5 @@ git clone https://github.com/BGzErol/luci-app-bypass.git package/luci-app-bypass
 # git clone https://github.com/BCYDTZ/luci-app-UUGameAcc.git package/luci-app-UUGameAcc
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le package/smartdns-le
 svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng package/chinadns-ng
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go package/trojan-go
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus package/trojan-plus
