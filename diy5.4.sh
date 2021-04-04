@@ -15,7 +15,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 sed -i '$a src-git diy https://github.com/BGzErol/diy-ziyong' feeds.conf.default
-# sed -i '$a src-git passwall https://github.com/BGzErol/oldv_passwall.git' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/BGzErol/oldv_passwall.git' feeds.conf.default
 # mv -vf ../mt7621_phicomm_k2p.dts ./target/linux/ramips/dts/mt7621_phicomm_k2p.dts
 #　git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 # git clone -b master https://github.com/vernesong/OpenClash.git package/OpenClash
@@ -27,10 +27,10 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 # git clone https://github.com/jerrykuku/luci-app-vssr.git  package/luci-app-vssr
 # git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-igodproxy
-git clone https://github.com/BGzErol/luci-app-bypass.git package/luci-app-bypass
+# git clone https://github.com/BGzErol/luci-app-bypass.git package/luci-app-bypass
 # git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 # git clone https://github.com/BCYDTZ/luci-app-UUGameAcc.git package/luci-app-UUGameAcc
-svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le package/smartdns-le
-svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng package/chinadns-ng
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go package/trojan-go
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus package/trojan-plus
+# svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le package/smartdns-le
+# svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng package/chinadns-ng
+# svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go package/trojan-go
+# svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus package/trojan-plus
